@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+body {
+  color: var(--color-base-text);
+  font-family: var(--body-font);
+  font-size: 62.5%;
+}
+
+.button:focus,
+button:active,
+textarea:focus,
+input:focus {
+  outline: none;
+}
