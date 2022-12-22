@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.conteiner {
+  background: url("./img/bg.png") #e4e4e45c;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.modal {
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+	box-shadow: 5px 5px 20px 0px rgba(23,20,23,1);
+  z-index: 1;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal::before{
+	content: "";
+  width: 300%;
+  height: 300%;
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -36%);
+  background: url('./img/grafismo.png') no-repeat ; 
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.modal::after{
+	content: "";
+    width: 100%;
+    height: 100%;
+    background: #c9f600;
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 0%;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+	.modal::before{
+		content: "";
+    width: 200%;
+    height: 200%;
+    transform: translate(-46%, -30%) rotate(90deg);
+    z-index: -2;
+	}
 }

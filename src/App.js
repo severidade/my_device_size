@@ -18,10 +18,12 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-        <div className='container'>
-          Width: {windowWidth} Height: {windowHeight}
-        </div>
+    <div className='conteiner'>
+      <div className='modal'>
+        <h1>Retorna dimensões</h1>
+        <p>A Largura da tela é <strong>{windowWidth}Px</strong></p>
+        <p>A Altura da tela é <strong>{windowHeight}Px</strong></p>
+      </div>
     </div>
   );
 }
