@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import './Reset.css'
 import './App.css';
 
@@ -18,11 +19,12 @@ function App() {
   }, [])
 
   return (
-    <div className='conteiner'>
+    <div className='container'>
+      {/* <p style={{fontSize: `${windowWidth/3}px` }}>severo</p> */}
       <div className='modal'>
         <h1>Retorna dimensões</h1>
-        <p>A Largura da tela é <strong>{windowWidth}Px</strong></p>
-        <p>A Altura da tela é <strong>{windowHeight}Px</strong></p>
+        <p>A Largura da tela é <strong>{windowWidth} PX</strong></p>
+        <p>A Altura da tela é <strong>{windowHeight} PX</strong></p>
       </div>
     </div>
   );

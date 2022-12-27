@@ -1,4 +1,18 @@
-.conteiner {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&family=Titillium+Web&display=swap');
+
+.modal h1{ font-family: 'Raleway', sans-serif; font-weight: 200; text-transform: uppercase; 	font-size: 3em;}
+.modal p {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.modal p:first-of-type{
+	margin-top: 30px;
+}
+
+.container {
   background: url("./img/bg.png") #e4e4e45c;
   display: flex;
   justify-content: center;
@@ -49,7 +63,7 @@
 		content: "";
     width: 200%;
     height: 200%;
-    transform: translate(-46%, -30%) rotate(90deg);
+    transform: translate(-48%, -30%) rotate(90deg);
     z-index: -2;
 	}
 }
