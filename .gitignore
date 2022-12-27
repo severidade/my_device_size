@@ -5,7 +5,6 @@
 /referencia
 /.pnp
 .pnp.js
-.htaccess
 
 # testing
 /coverage
