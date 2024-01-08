@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&family=Titillium+Web&display=swap');
 
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .modal h1{ font-family: 'Raleway', sans-serif; font-weight: 200; text-transform: uppercase; 	font-size: 3em;}
 .modal p {
 	font-family: 'Titillium Web', sans-serif;
@@ -58,6 +62,64 @@
     border-radius: 4px;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  z-index: 1;
+}
+
+
+footer p {
+  text-align: center;
+  font-size: 18px;
+}
+
+footer strong.titulo  {
+  text-transform: uppercase;
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+.menu_social {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0;
+  list-style-type: none;
+}
+
+a[class^="social"] {
+  display: block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-indent: -1000%;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+a.social_linkedin {
+  background-image: url("../src/img/icon/linkedin.png");
+}
+
+a.social_github {
+  background-image: url("../src/img/icon/github.png");
+}
+
+/* a.social_codpen {
+  background-image: url("http://severidade.com.br/codpenio/smile_slider/codpen.svg");
+  background-size: 90%;
+} */
+
+a.social_behance {
+  background-image: url("../src/img/icon/behance.png");
+  background-size: 100%;
+}
+
 @media screen and (max-width: 500px) {
 	.modal::before{
 		content: "";
@@ -66,4 +128,10 @@
     transform: translate(-48%, -30%) rotate(90deg);
     z-index: -2;
 	}
+}
+
+@media screen and (max-height: 580px) {
+  footer {
+    display: none;
+  }
 }

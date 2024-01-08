@@ -19,14 +19,26 @@ function App() {
   }, [])
 
   return (
-    <div className='container'>
-      {/* <p style={{fontSize: `${windowWidth/3}px` }}>severo</p> */}
-      <div className='modal'>
-        <h1>Retorna dimensões</h1>
-        <p>A Largura da tela é <strong>{windowWidth} PX</strong></p>
-        <p>A Altura da tela é <strong>{windowHeight} PX</strong></p>
+    <>
+      <div className='container'>
+        {/* <p style={{fontSize: `${windowWidth/3}px` }}>severo</p> */}
+        <div className='modal'>
+          <h1>Retorna dimensões</h1>
+          <p>A Largura da tela é <strong>{windowWidth} PX</strong></p>
+          <p>A Altura da tela é <strong>{windowHeight} PX</strong></p>
+        </div>
+      <footer>
+        <p><strong class="titulo">Tecnologias</strong> React - Javascript - HTML - CSS </p>
+        <p>Este projeto foi desenvolvido por Severo</p>
+        <ul class="menu_social">
+          <li><a class="social_linkedin" href="https://www.linkedin.com/in/severidade/">linkedin.com/in/severidade</a></li>
+          <li><a class="social_github"href="https://github.com/severidade">github.com/severidade</a> </li>
+          {/* <li><a class="social_codpen" href="https://codepen.io/severidade">codepen.io/severidade</a></li> */}
+          <li><a class="social_behance" href="https://www.behance.net/severidade">behance.net/severidade</a></li>
+        </ul>
+      </footer>
       </div>
-    </div>
+    </>
   );
 }
 
